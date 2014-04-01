@@ -3932,29 +3932,29 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: rgba(0, 0, 0, 0);
 }
 .navbar-default .navbar-brand {
-  color: #777777;
+  color: #ffffff;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #e6e6e6;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
   color: #777777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777777;
+  color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333333;
-  background-color: transparent;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555555;
-  background-color: rgba(0, 0, 0, 0);
+  color: #e6e6e6;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -3979,23 +3979,23 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: rgba(0, 0, 0, 0);
-  color: #555555;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #e6e6e6;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777777;
+    color: #ffffff;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333333;
-    background-color: transparent;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.1);
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555555;
-    background-color: rgba(0, 0, 0, 0);
+    color: #e6e6e6;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -4005,10 +4005,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default .navbar-link {
-  color: #777777;
+  color: #ffffff;
 }
 .navbar-default .navbar-link:hover {
-  color: #333333;
+  color: #ffffff;
 }
 .navbar-inverse {
   background-color: #222222;
@@ -5784,10 +5784,7 @@ button.close {
   min-height: 260px;
   padding-top: 35px;
 }
-#header-section {
-  position: relative;
-}
-#header-section #home-page-slider {
+#home-page-slider {
   position: absolute;
   width: 100%;
   top: 0;
@@ -5797,16 +5794,18 @@ button.close {
   z-index: 0;
   overflow: hidden;
 }
-#header-section #home-page-slider .carousel-inner .item img {
+#home-page-slider .carousel-inner .item img {
   width: 100%;
   height: auto;
 }
-#header-section .navbar .bottom-curved-shadow {
+#header {
+  position: relative;
+}
+#header .navbar .bottom-curved-shadow {
   height: 9px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  top: 22px;
   width: 100%;
   z-index: 1;
   background-image: url("../img/shadow.png");
@@ -5814,5 +5813,24 @@ button.close {
   background-color: rgba(0, 0, 0, 0);
   background-size: 100% auto;
   background-position: 0 0;
-  /*scroll 0 0 / 100% auto rgba(0, 0, 0, 0); */
+}
+#header .navbar .navbar-nav > li > .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#header .navbar .navbar-nav > li > .dropdown-menu li > a {
+  color: #fff;
+}
+#header .navbar .navbar-nav > li > .dropdown-menu li > a:hover,
+#header .navbar .navbar-nav > li > .dropdown-menu li > a:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#header .page-top-shadow {
+  background: url("../img/top-dark-opaque-gradient.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+  height: 310px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: absolute;
+  top: -1px;
+  width: 100%;
+  z-index: 2;
 }
