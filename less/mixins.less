@@ -1,0 +1,23 @@
+.dropCurvedShadowBelow(){
+    border-bottom:0;
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    &:before, &:after
+    {
+        content:"";
+        position:absolute; 
+        z-index:-1;
+        -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+        -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+        box-shadow:0 0 20px rgba(0,0,0,0.8);
+        top:50%;
+        bottom:0;
+        left:15%;
+        right:15%;
+        width:70%;
+        -moz-border-radius:100px / 20px;
+        border-radius:100px / 20px;
+    }
+}
