@@ -1,7 +1,123 @@
+#home-page-slider {
+    width: 100%;
+    background: none repeat scroll 0 0 #262626;
+    max-height: 480px;
+    z-index: 0;
+    overflow: hidden;
+    .carousel-inner {
+        .item {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+#about-us{
+    background-color:#dddddd;
+    .media {
+        margin: 15px 0;
+        .media-body {
+            padding: 10px 10px 0;
+            h3 {
+                margin-top:0;
+            }
+        }
+        &.white-bg {
+            background-color: #fff;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        &.hero {
+            .media-body {
+                img {
+                    width:200px;
+                    margin: 0 20px 0 0;
+                }
+            } 
+        }
+        &.vision {
+            .media-body {
+                h4 {
+                    font-style:italic;
+                    text-align:center;
+                }
+            }
+        }
+        &.values {
+            .media-body {
+                .nav {
+                    padding-left:35px;
+                    li {
+                        padding:15px 0;
+                        border-bottom:solid 1px #ccc;
+                        &:last-child{
+                            border-bottom:none;
+                        }
+                        .glyphicon {
+                            margin-left:-35px;
+                            margin-right:10px;
+                            color:#43A4EF;
+                            font-size:25px;
+                            vertical-align:top;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#services{
+    background-image: url("../img/bg-particle.png");
+    background-attachment: fixed;
+    .media {
+        margin: 15px 0;
+        &.white-bg {
+            background-color: #fff;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        .carousel {
+          img {
+              width:100%;
+              height:200px;
+          }
+          &.carousel-fade {
+              .carousel-inner {
+                  .item {
+                      opacity: 0;
+                      transition-property: opacity;
+                  }
+              
+                  .active {
+                      opacity: 1;
+                  }
+              
+                  .active.left,
+                  .active.right {
+                      left: 0;
+                      opacity: 0;
+                      z-index: 1;
+                  }
+              
+                  .next.left,
+                  .prev.right {
+                      opacity: 1;
+                  }
+              }
+            
+              .carousel-control {
+                  z-index: 2;
+              }
+            }
+        }
+        .media-body {
+            padding: 10px 10px 0;
+        }
+    }
+}
 #footer {
     background-color: #252528;
     color: #FFFFFF;
-    margin-top: 140px;
     min-height: 260px;
     padding-top: 35px;
 }
